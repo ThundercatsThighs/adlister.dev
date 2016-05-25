@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 
 <!--Page for creating new advertisement listings direct to signup  or login if not already-->
 
 <?php
-
+echo "create page";
 
 ?>
 
@@ -30,11 +30,6 @@
     </form>
   </div>
         
-=======
+
 <!--Page for creating new advertisement listings-->
-<?php 
 
-echo "create page";
-
- ?>
->>>>>>> e019c34b116b826c8ca7b44f6517c3dcf48dd944
