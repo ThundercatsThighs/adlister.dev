@@ -2,6 +2,6 @@
 
 <?php 
 
-
+echo "hey";
 
  ?>
