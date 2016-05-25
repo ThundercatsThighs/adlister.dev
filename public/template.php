@@ -1,6 +1,7 @@
 <?php 
 
-include_once '/..navbar.php';
+include_once __DIR__ . '/../views/partials/head.php';
+include_once __DIR__ . '/../views/partials/navbar.php';
 
  ?>
 <!doctype html>
@@ -9,7 +10,6 @@ include_once '/..navbar.php';
      
      <title>Template</title>
      
-     <link rel="author" href="humans.txt">
  </head>
  <body>
      
