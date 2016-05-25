@@ -102,6 +102,7 @@ class Model {
         //After insert, add the id back to the attributes array so the object can properly reflect the id
         //Iterate through all the attributes to build the prepared query
         //Use prepared statements to ensure data security
+
         $columns = '';
         $value_placeholders = '';
 
