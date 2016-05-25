@@ -9,12 +9,13 @@ include_once __DIR__ . '/../views/ads/create.php';
 //connection to db
 include_once __DIR__ . '/../env.template.php';
 
- ?>
+?>
 <!doctype html>
 <html>
  <head>
      
      <title>Template</title>
+     
      
  </head>
  <body>
