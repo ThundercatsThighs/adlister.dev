@@ -4,9 +4,9 @@
 
 		<div class="row">
 
-			<h1 class="section-title">Signup For OooLister</h1>
+			<h1 class="section-title">Signup For AdLister of Death</h1>
 
-			<div class="col-md-6 col-md-offset-3">
+			<div class="col s6 offset-s3">
 
 				<p>Please fill out the information below so we can create your account.</p>
 				<?php if (isset($_SESSION['ERROR_MESSAGE'])) : ?>
@@ -37,10 +37,10 @@
 					    <input type="password" class="form-control" id="password" name="password" placeholder="Password" data-required>
 					</div>
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col s6">
 							<button type="submit" class="btn btn-primary">Signup</button>
 						</div>
-						<div class="col-sm-6 text-right">
+						<div class="col s6 right-align">
 							<a href="/login" class="btn btn-success">Go To Login</a>
 						</div>
 					</div>
