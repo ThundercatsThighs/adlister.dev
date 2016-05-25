@@ -1,18 +1,20 @@
 <!--Page for an index of advertisements-->
 <?php 
 
-echo "index page";
+include_once __DIR__ . '/../views/partials/head.php';
+include_once __DIR__ . '/../views/partials/navbar.php';
+
+
 
  ?>
 <!doctype html>
 <html>
     <head>
         
-        <title>Untitled</title>
+        <title>Index of Items</title>
         
     </head>
     <body>
-        heeeeyyyy
-        <script src="js/main.js"></script>
+    
     </body>
 </html>
