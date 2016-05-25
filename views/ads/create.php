@@ -7,7 +7,7 @@
 ?>
 
  <div class="row">
-    <form class="col s12">
+    <form method="POST" class="col s12">
       <div class="row">
         <div class="input-field col s6 offset-s3">
           <input id="item_name" type="text" class="validate">
