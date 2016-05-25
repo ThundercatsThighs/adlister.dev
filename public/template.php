@@ -7,7 +7,7 @@ include_once __DIR__ . '/../views/home.php';
 include_once __DIR__ . '/../views/users/signup.php';
 include_once __DIR__ . '/../views/ads/create.php';
 //connection to db
-include_once __DIR__ . '/../env.template.php';
+include_once __DIR__ . '/../.env.php';
 
 ?>
 <!doctype html>
