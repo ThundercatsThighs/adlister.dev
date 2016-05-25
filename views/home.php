@@ -20,7 +20,7 @@
 
             <h3 class="">Featured Items</h3>
             <!-- loop through cards for featured row on homepage -->
-            <div class="card">
+            <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="">
                 </div>
