@@ -17,7 +17,7 @@
     <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
     <!-- Custom CSS from main.css -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="icon" href="/css/skull.png">
+    <link rel="icon" href="/img/skull.png">
 
 
 </head>
