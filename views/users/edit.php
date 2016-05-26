@@ -1,3 +1,4 @@
+<!-- login/signup user -->
 <div class="container">
 
 	<section id="login">
@@ -33,7 +34,7 @@
 					<div class="form-group">
 					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $user->username; ?>" data-required>
 					</div>
-					<button type="submit" class="btn btn-primary">Update Account</button>
+					<input id="login" class="col offset-s8" type="submit" value="Login">
 
 				</form>
 
