@@ -7,16 +7,11 @@ include_once __DIR__ . '/../views/partials/head.php';
 
 
  ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>AdLister of Death</title>
-    <!-- <?php require '../views/partials/head.php'; ?> -->
-</head>
-<body>
-    <!-- <?php require '../views/partials/navbar.php'; ?> -->
+ <h1> index</h1>
+<div class="row">
 
     <div class="row">
+
     <?php // foreach ($variable as $key => $value): ?>
         <div class="card small col s6">
             <div class="card-image waves-effect waves-block waves-light">
@@ -34,6 +29,9 @@ include_once __DIR__ . '/../views/partials/head.php';
             </div>
         </div>
     <?php// endforeach; ?>
+<<<<<<< HEAD
+</div>
+=======
     </div>
 
     <!-- <?php require $main_view; ?> -->
@@ -41,3 +39,4 @@ include_once __DIR__ . '/../views/partials/head.php';
     <!-- <?php require '../views/partials/common_js.php'; ?> -->
 </body>
 </html>
+>>>>>>> master

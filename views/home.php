@@ -20,20 +20,25 @@
 
             <h3 class="">Featured Items</h3>
             <!-- loop through cards for featured row on homepage -->
-            <div class="card small">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="">
+            <div class="row">
+                <?php // foreach ($variable as $key => $value): ?>
+                <div class="card small col s6">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="/css/<?php //echo $value['picture']?>">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4"><?php //echoInput::escape($value['name'])?><i class="material-icons right">More Info</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"><?php //echoInput::escape($value['name'])?><i class="material-icons right">X</i></span>
+                        <p>Data: <?php //echoInput::escape($value['location'])?> </p>
+                        <p>Data:  <?php //echoInput::escape($value['date_established'])?> </p>
+                        <p>Data: <?php //echoInput::escape($value['area_in_acres'])?> </p>
+                        <p>Data: <?php //echoInput::escape($value['description'])?> </p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
+                <?php// endforeach; ?>
             </div>
-        </div>
 
     </section>
 
