@@ -1,6 +1,8 @@
 <!--partial view for navbar-->
 
-<?php  ?>
+<?php 
+
+ ?>
 <html>
     <nav id="navbar" class="grey lighten-1">
         <a href="template.php" class="brand-logo">ADLISTEROFDEATH!!</a>
