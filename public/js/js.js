@@ -1,8 +1,10 @@
-"use strict"
 
-$('.button-collapse').sideNav();
+(function($){
+  $(function(){
 
-// Show sideNav
-// $('.button-collapse').sideNav('show');
-// Hide sideNav
-// $('.button-collapse').sideNav('hide');
+    $('.button-collapse').sideNav();
+
+  }); // end of document ready
+})
+
+(jQuery); // end of jQuery name space
