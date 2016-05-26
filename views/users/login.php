@@ -2,7 +2,7 @@
 
 	<section id="login">
 
-		<div class="row">
+		<div class="row loginUser">
 
 			<h1 class="section-title">Login To AdLister of Death</h1>
 
