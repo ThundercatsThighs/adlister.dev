@@ -4,9 +4,9 @@
 
  ?>
 <html>
-    <nav id="navbar" class="grey lighten-1">
+    <nav id="navbar" class="grey darken-1">
         <a href="../views/home.php" class="brand-logo">ADLISTEROFDEATH!!</a>
-        <!-- <div class="nav-wrapper"> -->
+        <div class="nav-wrapper">
             <ul class="right hide-on-med-and-down">
                 <li><a href="home">Home</a></li>
                 <li><a href="index">Items</a></li>
@@ -22,6 +22,6 @@
             </ul>
             <!-- hamburger -->
             <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">polymer</i></a>
-        <!-- </div> -->
+        </div>
     </nav>
 </html>
