@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <!-- Custom CSS from main.css -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="icon" href="/css/skull.png">
 
 
 </head>
