@@ -7,10 +7,8 @@
 
     <body>
         <br>
-        <div class="row">
-            <div class="col push-s1">
-                <img src="img/tombstone.png" alt="404">
-            </div>
+        <div class="center-align">
+            <img src="img/tombstone.png" alt="404">
         </div>
     </body>
 </html>
