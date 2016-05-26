@@ -44,10 +44,9 @@ class Item extends Model {
 
     public static function findThreeItems()
     {
-
         self::dbConnect();
 
-        $query = 'SELECT * FROM ' . static::$table . 'LIMIT 3';
+        $query = 'SELECT * FROM items LIMIT 3';
 
         $stmt = self::$dbc->prepare($query);
         $stmt->execute();
@@ -65,7 +64,7 @@ class Item extends Model {
             $instance = new static;
             $instance->attributes = $results;
         }
-
+        
         return $instance;
     }
 
