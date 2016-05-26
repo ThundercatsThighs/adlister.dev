@@ -6,8 +6,11 @@ include_once __DIR__ . '/../views/partials/navbar.php';
 include_once __DIR__ . '/../views/home.php';
 include_once __DIR__ . '/../views/users/signup.php';
 include_once __DIR__ . '/../views/ads/create.php';
+include_once __DIR__ . '/../views/ads/edit.php';
+include_once __DIR__ . '/../views/ads/index.php';
+include_once __DIR__ . '/../views/ads/show.php';
 //connection to db
-include_once __DIR__ . '/../.env.php';
+// include_once __DIR__ . '/../.env.php';
 
 ?>
 <!doctype html>
