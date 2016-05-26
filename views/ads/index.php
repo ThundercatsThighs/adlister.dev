@@ -1,7 +1,7 @@
 <!--Page for an index of advertisements-->
 <?php 
 
-// include_once __DIR__ . '/../views/partials/head.php';
+include_once __DIR__ . '/../views/partials/head.php';
 // include_once __DIR__ . '/../views/partials/navbar.php';
 
 
@@ -9,6 +9,9 @@
  ?>
  <h1> index</h1>
 <div class="row">
+
+    <div class="row">
+
     <?php // foreach ($variable as $key => $value): ?>
         <div class="card small col s6">
             <div class="card-image waves-effect waves-block waves-light">
@@ -26,4 +29,14 @@
             </div>
         </div>
     <?php// endforeach; ?>
+<<<<<<< HEAD
 </div>
+=======
+    </div>
+
+    <!-- <?php require $main_view; ?> -->
+
+    <!-- <?php require '../views/partials/common_js.php'; ?> -->
+</body>
+</html>
+>>>>>>> master
