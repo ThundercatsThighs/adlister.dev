@@ -42,6 +42,33 @@ class Item extends Model {
         return $instance;
     }
 
+    public static function findThreeItems()
+    {
+
+        self::dbConnect();
+
+        $query = 'SELECT * FROM ' . static::$table . 'LIMIT 3';
+
+        $stmt = self::$dbc->prepare($query);
+        $stmt->execute();
+
+        //Store the resultset in a variable named $result
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        // The following code will set the attributes on the calling object based on the result variable's contents
+
+        $instance = null;
+
+        if ( $results )
+        {
+
+            $instance = new static;
+            $instance->attributes = $results;
+        }
+
+        return $instance;
+    }
+
 
 }
 
