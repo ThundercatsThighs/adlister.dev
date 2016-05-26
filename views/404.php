@@ -1,9 +1,18 @@
-<div class="container">
+<?php  ?>
+<!doctype html>
+<html>
+    <head>
+        <title>Untitled</title>
+    </head>
 
-	<section>
+    <body>
+        <div class="container">
+            <section>
+                <h1 class="section-title">404 Error</h1>
+            </section>
 
-		<h1 class="section-title">404 Error</h1>
+            <img src="img/tombstone.png" alt="404">
 
-	</section>
-
-</div>
+        </div>
+    </body>
+</html>
