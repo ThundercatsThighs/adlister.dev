@@ -33,4 +33,9 @@ class Input
     {
         return $_REQUEST;
     }
+
+    public static function escape($input) 
+    {
+        return strip_tags(htmlentities($input));
+    }
 }

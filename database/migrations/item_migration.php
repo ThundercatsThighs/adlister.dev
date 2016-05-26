@@ -11,6 +11,7 @@ $query = 'CREATE TABLE items (
     description VARCHAR(240) NOT NULL,
     picture VARCHAR(240),
     owner VARCHAR(100) NOT NULL,
+    price FLOAT NOT NULL,
     PRIMARY KEY (id)
 )';
 

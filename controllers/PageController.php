@@ -36,7 +36,11 @@ function pageController()
         case '/edit':
             $main_view = '../views/ads/edit.php';
             break;
-        case '/' || '/home':
+        case '/create':
+            $main_view = '../views/ads/create.php';
+            break;
+        case '/home':
+        case '/':
             $main_view = '../views/home.php';
             break;
         default:    // displays 404 if route not specified above
@@ -50,3 +54,7 @@ function pageController()
 }
 
 extract(pageController());
+
+
+
+
