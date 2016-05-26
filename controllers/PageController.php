@@ -23,6 +23,7 @@ function pageController()
         $request = $_SERVER['REQUEST_URI'];
     }
 
+
     // switch that will run functions and setup variables dependent on what route was accessed
     switch ($request) {
 

@@ -6,6 +6,7 @@ $item = new item;
 $item->name = 'ball';
 $item->description = 'its a ball';
 $item->owner = "finn_the_human";
+$item->picture = "finn.png";
 $item->save();
 
 $item = new item;

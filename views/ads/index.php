@@ -7,6 +7,7 @@
 
 
  ?>
+ <h1> index</h1>
 <div class="row">
     <?php // foreach ($variable as $key => $value): ?>
         <div class="card small col s6">
@@ -25,4 +26,4 @@
             </div>
         </div>
     <?php// endforeach; ?>
-    </div>
+</div>
