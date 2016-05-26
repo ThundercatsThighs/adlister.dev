@@ -6,13 +6,11 @@
     </head>
 
     <body>
-        <div class="container">
-            <section>
-                <h1 class="section-title">404 Error</h1>
-            </section>
-
-            <img src="img/tombstone.png" alt="404">
-
+        <br>
+        <div class="row">
+            <div class="col push-s1">
+                <img src="img/tombstone.png" alt="404">
+            </div>
         </div>
     </body>
 </html>
