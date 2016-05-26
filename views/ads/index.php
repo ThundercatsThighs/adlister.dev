@@ -1,13 +1,22 @@
 <!--Page for an index of advertisements-->
 <?php 
 
-// include_once __DIR__ . '/../views/partials/head.php';
+include_once __DIR__ . '/../views/partials/head.php';
 // include_once __DIR__ . '/../views/partials/navbar.php';
 
 
 
  ?>
-<div class="row">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AdLister of Death</title>
+    <!-- <?php require '../views/partials/head.php'; ?> -->
+</head>
+<body>
+    <!-- <?php require '../views/partials/navbar.php'; ?> -->
+
+    <div class="row">
     <?php // foreach ($variable as $key => $value): ?>
         <div class="card small col s6">
             <div class="card-image waves-effect waves-block waves-light">
@@ -26,3 +35,9 @@
         </div>
     <?php// endforeach; ?>
     </div>
+
+    <!-- <?php require $main_view; ?> -->
+
+    <!-- <?php require '../views/partials/common_js.php'; ?> -->
+</body>
+</html>
