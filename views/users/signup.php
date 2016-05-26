@@ -37,10 +37,10 @@
 					    <input type="password" class="form-control" id="password" name="password" placeholder="Password" data-required>
 					</div>
 					<div class="row">
-						<div class="col s6">
+						<div class="col s4">
 							<button type="submit" class="btn btn-primary">Signup</button>
 						</div>
-						<div class="col s6 right-align">
+						<div class="col s8 right-align">
 							<a href="/login" class="btn btn-success">Go To Login</a>
 						</div>
 					</div>

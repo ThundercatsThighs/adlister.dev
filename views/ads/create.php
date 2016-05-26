@@ -27,6 +27,9 @@ echo "create page";
           <label for="description">Description</label>
         </div>
       </div>
+      <div class="row">
+          <input class="btn waves-effect waves-light col s2 offset-s5" type="submit" value="Submit">
+      </div>
     </form>
   </div>
         
