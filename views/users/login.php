@@ -31,9 +31,6 @@
 						<div class="col-sm-6">
 							<button type="submit" class="waves-effect waves-black btn-flat">Login</button>
 						</div>
-						<!-- <div class="col-sm-6">
-							<button class="loginUser waves-effect waves-black btn-flat">Go To Signup</button>
-						</div> -->
 					</div>
 				</form>
     		</div>
