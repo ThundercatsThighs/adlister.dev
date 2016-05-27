@@ -1,6 +1,6 @@
 <br>
 <!-- switch -->
-<div style="text-align: center">
+<div class="center-text">
 	<input type="image" src="../img/ts_button.png" class="new">
 	<input type="image" src="../img/ts_button2.png" class="login">
 </div>
@@ -9,7 +9,7 @@
 	<div class="col s12 z-depth-6 card-panel">
 		<section id="signup">
 			<div class="row newUser">
-				<h1 class="section-title" style="text-align: center">Signup...if you dare...</h1>
+				<h1 class="section-title">Signup...if you dare...</h1>
 				<div class="col-md-6 col-md-offset-3">
 					<p>Please fill out the information below so we can create your account.</p>
 					<?php if (isset($_SESSION['ERROR_MESSAGE'])) : ?>
@@ -49,10 +49,6 @@
 							<div class="col-sm-6">
 								<button type="submit" class="waves-effect waves-black btn-flat">Signup</button>
 							</div>
-							<br>
-							<!-- <div class="col-sm-6">
-								<button class="waves-effect waves-black btn-flat">Go To Login</button>
-							</div> -->
 						</div>
 					</form>
 				</div>

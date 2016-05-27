@@ -19,3 +19,16 @@
 #loginPage {
     margin-top: 1em;
 }
+
+h1{
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+input {
+    outline: none;
+}
+

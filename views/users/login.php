@@ -2,7 +2,7 @@
 	<div class="col s12 z-depth-6 card-panel">
         <section id="login">
             <div class="row loginUser">
-                <h1 class="section-title" style="text-align: center">We knew you'd return...</h1>
+                <h1 class="section-title">We knew you'd return...</h1>
                 <?php if (isset($_SESSION['ERROR_MESSAGE'])) : ?>
                     <div class="alert alert-danger">
                         <p class="error"><?= $_SESSION['ERROR_MESSAGE']; ?></p>
@@ -31,7 +31,6 @@
 						<div class="col-sm-6">
 							<button type="submit" class="waves-effect waves-black btn-flat">Login</button>
 						</div>
-                        <br>
 						<!-- <div class="col-sm-6">
 							<button class="loginUser waves-effect waves-black btn-flat">Go To Signup</button>
 						</div> -->
