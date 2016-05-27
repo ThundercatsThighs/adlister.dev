@@ -46,7 +46,7 @@ class Item extends Model {
     {
         self::dbConnect();
 
-        $query = 'SELECT * FROM items LIMIT 3';
+        $query = 'SELECT * FROM ' . self::$table . ' LIMIT 3';
 
         $stmt = self::$dbc->prepare($query);
         $stmt->execute();
@@ -66,6 +66,12 @@ class Item extends Model {
         }
         
         return $instance;
+    }
+
+    public static function getPage() 
+    {
+        self::dbConnect();
+        //gets page and sets accordingly
     }
 
 
