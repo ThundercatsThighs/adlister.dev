@@ -22,10 +22,27 @@ function pageController()
 
         $request = $_SERVER['REQUEST_URI'];
     }
+
+    //grabs info for user signup
+    if (!empty($_POST)  && Auth::attempt($_POST['email_user'], $_POST['password']))
+    {
+        header('Location: /');
+        die();
+
+    } 
+    elseif (!empty($_POST['name'])) 
+    {
+        $user = new User;
+        $user->name = $_POST['name'];
+        $user->email = $_POST['email'];
+        $user->username = $_POST['password'];
+        $user->password = $_ENV['USER_PASS'];
+        $user->save();
+    }
+
     // switch that will run functions and setup variables dependent on what route was accessed
     switch ($request) {
 
-        
         case '/index':
             $main_view = '../views/ads/index.php';
             $data['indexItems'] = Item::all();
@@ -42,15 +59,15 @@ function pageController()
         case '/create':
             $main_view = '../views/ads/create.php';
             break;
-        case '/home':
         case '/':
+        case '/home':
             $main_view = '../views/home.php';
             break;
         default:    // displays 404 if route not specified above
             $main_view = '../views/404.php';
             break;
     }
-
+      
     $data['main_view'] = $main_view;
 
     return $data;
