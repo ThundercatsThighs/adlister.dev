@@ -19,6 +19,7 @@
         
             <h3 class="">Featured Items</h3>
             <!-- loop through cards for featured row on homepage -->
+            <!-- png pics shown at different size inside of card -->
             <div class="row">
             <?php $featuredItems = Item::findThreeItems(); ?>
                 <?php  foreach ($featuredItems->attributes as $value): ?>
@@ -27,7 +28,7 @@
                         <img class="activator" src="/img/<?= $value['picture']?>">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4"><?= Input::escape($value['name'])?><i class="material-icons right"></i></span>
+                        <span class="card-title activator grey-text text-darken-4"><?= Input::escape($value['name'])?></span>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4"><?=Input::escape($value['name'])?><i class="material-icons right">X</i></span>

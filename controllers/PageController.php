@@ -7,7 +7,7 @@ function pageController()
 
     // defines array to be returned and extracted for view
     $data = [];
-
+    
     // finds position for ? in url so we can look at the url minus the get variables
     $get_pos = strpos($_SERVER['REQUEST_URI'], '?');
 
@@ -22,13 +22,13 @@ function pageController()
 
         $request = $_SERVER['REQUEST_URI'];
     }
-    var_dump($request);
     // switch that will run functions and setup variables dependent on what route was accessed
     switch ($request) {
 
         
         case '/index':
             $main_view = '../views/ads/index.php';
+            $data['indexItems'] = Item::all();
             break;
         case '/login':
             $main_view = '../views/users/signup.php';
