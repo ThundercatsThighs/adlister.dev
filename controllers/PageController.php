@@ -7,6 +7,10 @@ function pageController()
 
     // defines array to be returned and extracted for view
     $data = [];
+    if (Auth::check())
+    {
+        echo 'logged in';
+    }
     
     // finds position for ? in url so we can look at the url minus the get variables
     $get_pos = strpos($_SERVER['REQUEST_URI'], '?');
@@ -24,13 +28,13 @@ function pageController()
     }
 
     //grabs info for user signup
-    if (!empty($_POST)  && Auth::attempt($_POST['email_user'], $_POST['password']))
+    if (!empty($_POST['name']))
     {
         header('Location: /');
         die();
 
     } 
-    elseif (!empty($_POST['name'])) 
+    elseif (!empty($_POST) && Auth::attempt($_POST['email_user'], $_POST['password'])) 
     {
         $user = new User;
         $user->name = $_POST['name'];
