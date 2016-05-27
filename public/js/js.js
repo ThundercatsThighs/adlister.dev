@@ -9,3 +9,18 @@
 })
 
 (jQuery); // end of jQuery name space
+
+    
+$(function(){
+    $(".newUser, .loginUser").hide();
+    
+      $(".new").on("click", function(){
+         $(".newUser").show();
+         $(".loginUser").hide();
+      });
+    
+      $(".login").on("click", function(){
+         $(".newUser").hide();
+         $(".loginUser").show();
+      });
+    });

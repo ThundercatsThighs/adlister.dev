@@ -1,13 +1,18 @@
+<!-- switch -->
+<div style="text-align: center">
+	<button class="new">New User</button>
+	<button class="login">Returning User</button>
+</div>
+<div class="newUser"></div>
+<div class="loginUser"></div>
+
 <div class="container">
 
 	<section id="login">
 
-		<div class="row">
-
+		<div class="row newUser">
 			<h1 class="section-title">Signup For AdLister of Death</h1>
-
 			<div class="col s6 offset-s3">
-
 				<p>Please fill out the information below so we can create your account.</p>
 				<?php if (isset($_SESSION['ERROR_MESSAGE'])) : ?>
 	                <div class="alert alert-danger">
@@ -54,3 +59,4 @@
 	</section>
 
 </div>
+<?php require_once 'login.php' ?>

@@ -1,5 +1,3 @@
-
-
 <!--Page for creating new advertisement listings direct to signup  or login if not already-->
 
 <?php

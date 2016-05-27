@@ -30,7 +30,9 @@ function pageController()
             $main_view = '../views/ads/index.php';
             $data['indexItems'] = Item::all();
             break;
-
+        case '/login':
+            $main_view = '../views/users/signup.php';
+            break;
         case '/edit':
             $main_view = '../views/ads/edit.php';
             break;
