@@ -21,13 +21,9 @@ $var = Item::find($uniqueId);
     </div>
 </div>
 
-<!-- If logged in show -->
+
 <div class="row">
     <div class="col s6 left-align">
-        <a href="/edit" class="btn btn-success">Edit Ad</a>
+        <a href="/index" class="btn btn-success">Back to items</a>
     </div>
-    <div class="col s6 right-align">
-        <button type="submit" class="btn btn-warning">Delete Ad</button>
-    </div>
-
 </div>

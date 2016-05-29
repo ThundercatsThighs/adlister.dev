@@ -36,7 +36,7 @@
                         <p>Price: <?= Input::escape($value['price'])?> </p>
                         <p>Seller:  <?= Input::escape($value['owner'])?> </p>
                     </div>
-                    <p><a href="/show?ad=<?php echo $value['id']?>"><?=Input::escape($value['name'])?></a></p>
+                    <p><a href="/show?ad=<?php echo $value['id']?>">Details for <?=Input::escape($value['name'])?></a></p>
                 </div>
                 <?php endforeach; ?>
             </div>
