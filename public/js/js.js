@@ -12,7 +12,7 @@
 
     
 $(function(){
-    $(".newUser, .loginUser").hide();
+    $(".newUser").hide();
     
       $(".new").on("click", function(){
          $(".newUser").show();

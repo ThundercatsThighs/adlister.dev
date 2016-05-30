@@ -1,5 +1,3 @@
-<br>
-<!-- switch -->
 <div class="center-text">
 	<input type="image" src="../img/ts_button.png" class="new">
 	<input type="image" src="../img/ts_button2.png" class="login">
