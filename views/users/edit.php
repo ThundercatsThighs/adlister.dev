@@ -23,8 +23,18 @@
 	                <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
 	            <?php endif; ?>
 
-				<form method="POST" action="" data-validation data-required-message="This field is required">
+				<!-- update users in db -->
+	            
+	            <?php if (isset($_POST['update'])) : ?>
+		            <?php { $user->id=$_POST['id']; ?>
+		            <?php	$user->name=$_POST['name']; ?>
+		            <?php	$user->email=$_POST['email']; ?>
+		            <?php	$user->username=$_POST['username']; ?>	       
+		            <?php 	Model::update(':id'); ?>
+	            <?php } endif; ?>
 
+				<form method="POST" action="" data-validation data-required-message="This field is required">
+					<?php $user = Auth::user(); ?>
 					<div class="form-group">
 					    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="<?= $user->name; ?>" data-required>
 					</div>
@@ -34,7 +44,7 @@
 					<div class="form-group">
 					    <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $user->username; ?>" data-required>
 					</div>
-					<input id="login" class="col offset-s8" type="submit" value="Login">
+					<input id="update" name="update" class="col offset-s8" type="submit" value="Update">
 
 				</form>
 
