@@ -2,11 +2,11 @@
 <!-- Page adjust navbar if user is logged in -->
 
 <!-- User info -->
-
+<?php $user = Auth::user(); ?>
 <div class="row">
     <div class="col s4 offset-s4">
-        <p>grab username</p>
-        <p>grab email</p>
+        <p><?= $user->attributes['username'] ?></p>
+        <p><?= $user->attributes['email'] ?></p>
     </div>
 </div>
 <!--  User edit profile button -->
