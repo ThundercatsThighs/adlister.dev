@@ -10,7 +10,7 @@
         <?php  foreach ($indexItems->attributes as $value): ?>
         <div class="col s4 m4 l4">
           <div class="card medium">
-            <div class="card-image">
+            <div class="card-image indexCards">
               <img class="activator" src="/img/<?= $value['picture']?>">
             </div>
             <div class="card-content">
