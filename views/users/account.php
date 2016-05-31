@@ -4,12 +4,13 @@
 <!-- User info -->
 <?php $user = Auth::user(); ?>
 <div class="row">
+<?php ?>
     <div class="col s4 m4 l4">
         
         <!-- <p><?= $user->attributes['username'] ?></p> -->
         <!-- <p><?= $user->attributes['email'] ?></p> -->
 
-        <?php var_dump($user) ?>
+        <?php  ?>
     </div>
 </div>
 <!--  User edit profile button -->
@@ -20,7 +21,6 @@
 </div>
 
 <!-- Users ads -->
-
 <div class="row">
     <?php // foreach ($variable as $key => $value): ?>
         <div class="card small col s6">

@@ -12,6 +12,9 @@ $query = 'CREATE TABLE items (
     picture VARCHAR(240),
     owner VARCHAR(100) NOT NULL,
     price FLOAT NOT NULL,
+    user_id INT UNSIGNED NOT NULL,
+    FOREIGN KEY (user_id) 
+        REFERENCES users(id),
     PRIMARY KEY (id)
 )';
 
