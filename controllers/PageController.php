@@ -48,7 +48,8 @@ function pageController()
         header('Location: /');
         die();
     }
-    var_dump($_SESSION);
+    // var_dump($_SESSION);
+    // var_dump($_POST);
 
     // switch that will run functions and setup variables dependent on what route was accessed
     switch ($request) {
