@@ -54,6 +54,9 @@ function pageController()
     switch ($request) {
 
         case '/account':
+            $user = Auth::user();
+            $data['user'] = $user->attributes;
+            $data['userItems'] = Item::getUsersItems($data['user']['id']);
             $main_view = '../views/users/account.php';
             break;
         case '/index':
