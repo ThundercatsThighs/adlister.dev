@@ -26,9 +26,14 @@ function pageController()
     //checks POSt for signup or login and redirects
     if (!empty($_POST['email_user']) && Auth::attempt($_POST['email_user'], $_POST['password']))
     {
-        header('Location: /');
+        header('Location: /account');
         die();
 
+    }
+    else if (!empty($_POST['email_user']) && !Auth::attempt($_POST['email_user'], $_POST['password']))
+    {
+        header('Location: /login');
+        die();
     }
     elseif (!empty($_POST))
     {
@@ -40,11 +45,17 @@ function pageController()
         $user->save();
         $_SESSION['IS_LOGGED_IN'] = $user->username;
         $_SESSION['LOGGED_IN_ID'] = $user->id;
+        header('Location: /');
+        die();
     }
+    var_dump($_SESSION);
 
     // switch that will run functions and setup variables dependent on what route was accessed
     switch ($request) {
 
+        case '/account':
+            $main_view = '../views/users/account.php';
+            break;
         case '/index':
             $main_view = '../views/ads/index.php';
             $data['indexItems'] = Item::all();
@@ -57,10 +68,10 @@ function pageController()
             break;
         case '/logout':
             Auth::logout();
-            $main_view = '../views/home.php';
+            header('Location: /home');
             break;
         case '/edit':
-            $main_view = '../views/ads/edit.php';
+            $main_view = '../views/users/edit.php';
             break;
         case '/create':
             $main_view = '../views/ads/create.php';
@@ -73,8 +84,6 @@ function pageController()
             $main_view = '../views/404.php';
             break;
     }
-
-      
     $data['main_view'] = $main_view;
 
     return $data;
