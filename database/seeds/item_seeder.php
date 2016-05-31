@@ -25,3 +25,29 @@ $item->owner = "ice_king";
 $item->price = "2.00";
 $item->picture = "cat.png";
 $item->save();
+
+//new items 05_31
+
+$item = new item;
+$item->name = 'urn';
+$item->description = 'for storage';
+$item->owner = "ice_king";
+$item->price = "50.00";
+$item->picture = "urn.png";
+$item->save();
+
+$item = new item;
+$item->name = 'gargoyle';
+$item->description = 'cute, decorative piece';
+$item->owner = "ice_king";
+$item->price = "32.00";
+$item->picture = "gargoyle.png";
+$item->save();
+
+$item = new item;
+$item->name = 'tarantula';
+$item->description = 'good pet, house-trained';
+$item->owner = "ice_king";
+$item->price = "200.00";
+$item->picture = "tarantula.png";
+$item->save();
