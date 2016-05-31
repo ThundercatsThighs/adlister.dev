@@ -25,14 +25,15 @@
 
 				<!-- update users in db -->
 	            
+            	<?php $user = User::find(Auth::id()); ?>
 	            <?php if (!empty($_POST)) : ?>
-	            <?php $var = User::findByUsernameOrEmail($_SESSION['IS_LOGGED_IN']) ?>
-	            <?php var_dump($var->attributes); ?>
-		            <?php 	$var->id=$var->attributes['id']; ?>
-		            <?php 	$var->name=$_POST['name']; ?>
-		            <?php	$var->email=$_POST['email']; ?>
-		            <?php	$var->username=$_POST['username']; ?>	       
-		            <?php 	$user->save(); ?>
+	            <?php var_dump($user); ?>
+		            	
+			            <?php 	$user->name=Input::get('name'); ?>
+			            <?php 	$user->email=Input::get('email'); ?>
+			            <?php 	$user->username=Input::get('username'); ?>
+			            <?php 	$user->save(); ?>
+
 	            <?php endif; ?>
 
 				<form method="POST" action="" data-validation data-required-message="This field is required">
