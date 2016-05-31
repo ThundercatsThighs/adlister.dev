@@ -74,6 +74,27 @@ class Item extends Model {
         //gets page and sets accordingly
     }
 
+    public static function getUsersItems($id)
+    {
+        self::dbConnect();
+        $query = 'SELECT * FROM ' .self::$table; ' WHERE id = :id';
+        $stmt = self::$dbc->prepare($query);
+        $stmt->execute();
+
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        $instance = null;
+
+        if ( $results )
+        {
+
+            $instance = new static;
+            $instance->attributes = $results;
+        }
+        
+        return $instance;
+    }
+
 
 }
 

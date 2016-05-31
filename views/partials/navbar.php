@@ -22,6 +22,7 @@
                 <li><a href="home">Home</a></li>
                 <li><a href="index">Items</a></li>
                 <?php if (Auth::check()): ?>
+                    <li><a href="account">Account</a></li>
                     <li><a href="logout">Logout</a></li>
                 <?php else: ?>
                     <li><a href="login">Login</a></li>
