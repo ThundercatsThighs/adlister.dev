@@ -74,14 +74,15 @@ class Item extends Model {
         //gets page and sets accordingly
     }
 
-    public static function getUsersItems($id)
+    public static function getUsersItems($userId)
     {
         self::dbConnect();
-        $query = 'SELECT * FROM ' .self::$table; ' WHERE id = :id';
+        $query = 'SELECT * FROM ' . self::$table . ' WHERE user_id = :user_id';
         $stmt = self::$dbc->prepare($query);
+        $stmt->bindValue(':user_id', $userId, PDO::PARAM_STR);
         $stmt->execute();
 
-        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $results = $stmt->fetchall(PDO::FETCH_ASSOC);
 
         $instance = null;
 
